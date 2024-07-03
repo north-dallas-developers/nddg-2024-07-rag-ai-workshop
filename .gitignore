@@ -1,0 +1,17 @@
+2-simple-llama-index/storage
+env
+.venv
+.vscode
+env-vals.txt
+__pycache__
+storage
+.DS_Store
+
+# Can't share the docs for this project. Use your own pdfs.
+5-full-rag-groq/documents 
+
+# Hide Chroma generated files
+chroma.log
+chroma_data
+3-nddnug-meetings/storage
+4-nddnug-meetings-function/storage
