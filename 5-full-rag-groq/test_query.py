@@ -1,5 +1,5 @@
 from termcolor import colored
-from query_logic import make_query
+from ai_query_logic import make_query
 
 print("")
 print(colored("Ask a question of your AI, peasant, and be quick about it!", "red"))
