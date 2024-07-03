@@ -8,11 +8,11 @@ while True:
     input_string = input()
 
     response = client.completions.create(
-    model="gpt-3.5-turbo-instruct",
-    prompt=input_string
+        model="gpt-3.5-turbo-instruct",
+        prompt=input_string,
+        max_tokens=1000
     )
 
-    # print(response)
     print(response.choices[0].text)
 
     print("")
