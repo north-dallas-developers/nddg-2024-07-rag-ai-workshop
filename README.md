@@ -16,8 +16,8 @@ pip install -r requirements-mac.txt
 Windows
 ```bash
 python -m venv env
-./env/bin/activate
-pip install -r requirements-win.txt 
+./env/Scripts/Activate.ps1 or ./env/Scripts/activate.bat
+pip install -r requirements_win.txt 
 ```
 ## Samples
 
