@@ -6,19 +6,25 @@ This repository contains a number of sample projects used in the RAG AI workshop
 
 We recommend running these in a python virtualenv (or something like it). See https://docs.python.org/3/library/venv.html. If you have it installed, download this source code and create a virtual env for yourself.
 
-macOS\Linxu
+macOS\Linux
 ```bash
 python3 -m venv env
 source env/bin/activate
-pip install -r requirements-mac.txt 
+pip install -r requirements.txt
 ```
 
 Windows
 ```bash
 python -m venv env
 ./env/Scripts/Activate.ps1 or ./env/Scripts/activate.bat
-pip install -r requirements_win.txt 
+pip install -r requirements.txt
 ```
+`requirements.txt` lists only the packages the samples import directly and leaves the
+transitive tree to pip, so you get current versions. Note that `chromadb` has an
+unpatched code-injection advisory (GHSA, affects all releases through 1.5.9) — these
+samples run it locally for a workshop, so don't expose `chroma run` to a network you
+don't trust.
+
 ## Samples
 
 ### simple-llama-index
